@@ -13,6 +13,8 @@ Things you may want to cover:
 
 * Database creation
 
+https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+
 * Database initialization
 
 * How to run the test suite
