@@ -5,8 +5,6 @@ ruby "3.0.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem "rails", "~> 6.1.4", ">= 6.1.4.1"
-
-gem "pg"
 # Use Puma as the app server
 gem "puma", "~> 5.0"
 # Use SCSS for stylesheets
@@ -25,27 +23,21 @@ gem "jbuilder", "~> 2.7"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# gems I installed
 gem "haml", "~> 5.2", ">= 5.2.2"
 gem "haml-rails", "~> 2.0"
 gem "html2haml"
-
-gem "erb2haml", :group => :development
-
-group :test do
-  gem "shoulda-matchers", "~> 5.0"
-end
+gem "pg"
+gem "simple_form"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
 
-# Run against this stable release
-group :development, :test do
-  gem "rspec-rails", "~> 5.0.0"
-end
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  # gems I installed
+  gem "rspec-rails", "~> 5.0.0"
 end
 
 group :development do
@@ -57,6 +49,8 @@ group :development do
   gem "listen", "~> 3.3"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
+  # gems I installed
+  gem "erb2haml"
 end
 
 group :test do
@@ -65,6 +59,8 @@ group :test do
   gem "selenium-webdriver"
   # Easy installation and use of web drivers to run system tests with browsers
   gem "webdrivers"
+  # my gems
+  gem "shoulda-matchers", "~> 5.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
